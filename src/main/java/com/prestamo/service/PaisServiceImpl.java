@@ -19,4 +19,9 @@ public class PaisServiceImpl implements PaisService {
 		return paisRepository.findAll();
 	}
 
+	@Override
+	public Pais insertaPais(Pais pais) {
+		return paisRepository.save(pais);
+	}
+
 }
